@@ -19,4 +19,13 @@ describe('<Heading />', () => {
 
     expect(heading.tagName.toLowerCase()).toBe('h5');
   });
+
+  it('should renders component with a blue gradient text', () => {
+    global.renderTheme(<Heading gradient="blue">Children</Heading>);
+
+    const heading = screen.getByText('Children');
+
+    expect(heading).toHaveStyleRule('background', 'linear-gradient(#F5F5F5,#284B63)');
+    expect(heading).toHaveStyleRule('background-clip', 'text');
+  });
 });
