@@ -1,6 +1,9 @@
 {
   "name": "busca-dev-spa",
   "version": "0.1.0",
+  "author": {
+    "name": "Savio Moreira"
+  },
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
