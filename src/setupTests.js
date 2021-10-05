@@ -4,3 +4,10 @@
 // learn more: https://github.com/testing-library/jest-dom
 import '@testing-library/jest-dom';
 import 'jest-styled-components';
+import { render } from '@testing-library/react';
+import { ThemeProvider } from 'styled-components';
+import { theme } from './styles/theme';
+
+global.renderTheme = (children) => {
+  return render(<ThemeProvider theme={theme}>{children}</ThemeProvider>);
+};
