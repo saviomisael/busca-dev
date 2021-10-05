@@ -10,6 +10,7 @@ export const BaseStyles = createGlobalStyle`
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: inherit;
   }
 
   html,
@@ -19,5 +20,13 @@ export const BaseStyles = createGlobalStyle`
 
   body {
     font-family: ${({ theme }) => theme.fonts.family.notoSans};
+  }
+
+  h1 {
+    font-size: ${({ theme }) => theme.fonts.sizes.huge};
+  }
+
+  h5 {
+    font-size: ${({ theme }) => theme.fonts.sizes.large};
   }
 `;
