@@ -9,4 +9,12 @@ describe('<TextComponent />', () => {
 
     expect(text).toHaveStyleRule('font-size', '1.8rem');
   });
+
+  it('should renders component with smal font size', () => {
+    global.renderTheme(<TextComponent smallText>Children</TextComponent>);
+
+    const text = screen.getByText('Children');
+
+    expect(text).toHaveStyleRule('font-size', '1.6rem');
+  });
 });
