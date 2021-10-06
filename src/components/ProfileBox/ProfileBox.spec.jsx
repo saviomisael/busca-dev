@@ -37,4 +37,12 @@ describe('<ProfileBox />', () => {
 
     expect(bioElement).toBeInTheDocument();
   });
+
+  it('should renders blog element when blog prop is truthy', () => {
+    global.renderTheme(<ProfileBox {...profileBoxPropsMock} />);
+
+    const blogElement = screen.getByRole('link', { name: 'blog.com' });
+
+    expect(blogElement).toBeInTheDocument();
+  });
 });
