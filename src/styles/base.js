@@ -29,4 +29,8 @@ export const BaseStyles = createGlobalStyle`
   h5 {
     font-size: ${({ theme }) => theme.fonts.sizes.large};
   }
+
+  a {
+    text-decoration: none;
+  }
 `;
