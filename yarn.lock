@@ -2307,6 +2307,11 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
+"@hover/storybook-addon-pseudo-states@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@hover/storybook-addon-pseudo-states/-/storybook-addon-pseudo-states-1.1.1.tgz#f29d74e6955c9ab1f12b381a5ed83fbfc6da0ad7"
+  integrity sha512-EvybkzLA1P28yviZfzwsQ+gTNgLItEGPtJo5Q0FjvGuv2uLjRrd2U2LohaeS++m5r44Yo2IHzxpKObQH4C3hkw==
+
 "@humanwhocodes/config-array@^0.5.0":
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.5.0.tgz#1407967d4c6eecd7388f83acf1eaf4d0c6e58ef9"
