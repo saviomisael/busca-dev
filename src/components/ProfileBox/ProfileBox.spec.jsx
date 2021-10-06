@@ -4,10 +4,12 @@ import { profileBoxPropsMock } from './mock';
 
 describe('<ProfileBox />', () => {
   it('should renders component with default props', () => {
-    delete profileBoxPropsMock.bio;
-    delete profileBoxPropsMock.blog;
+    const props = { ...profileBoxPropsMock };
 
-    global.renderTheme(<ProfileBox {...profileBoxPropsMock} />);
+    delete props.bio;
+    delete props.blog;
+
+    global.renderTheme(<ProfileBox {...props} />);
 
     const bioElement = screen.queryByText(
       'bio Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
@@ -26,5 +28,13 @@ describe('<ProfileBox />', () => {
     const avatarElement = screen.getByAltText(`${profileBoxPropsMock.username} avatar`);
 
     expect(avatarElement).toBeInTheDocument();
+  });
+
+  it('should renders bio when bio prop is truthy', () => {
+    global.renderTheme(<ProfileBox {...profileBoxPropsMock} />);
+
+    const bioElement = screen.getByText(/^bio Lorem ipsum/i);
+
+    expect(bioElement).toBeInTheDocument();
   });
 });
