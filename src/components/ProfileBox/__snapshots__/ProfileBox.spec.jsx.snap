@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProfileBox /> should matches with snapshot 1`] = `
+.c0 {
+  padding: 1rem;
+  text-align: center;
+}
+
+.c2 {
+  text-align: start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.c1 {
+  width: 14.8rem;
+  height: 14.8rem;
+}
+
+.c5 {
+  color: #F5F5F5;
+  font-size: 1.8rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-column-gap: 2rem;
+  column-gap: 2rem;
+}
+
+.c5::before {
+  content: url(link_white.svg);
+  -webkit-transform: translateY(0.2rem);
+  -ms-transform: translateY(0.2rem);
+  transform: translateY(0.2rem);
+}
+
+.c3 {
+  color: #F5F5F5;
+  font-weight: 400;
+  font-family: 'Ubuntu',sans-serif;
+}
+
+.c4 {
+  font-size: 1.8rem;
+  color: #F5F5F5;
+}
+
+<div
+  class="c0"
+>
+  <img
+    alt="johndoe avatar"
+    class="c1"
+    src="person_white.svg"
+  />
+  <div
+    class="c2"
+  >
+    <h5
+      class="c3"
+    >
+      @
+      johndoe
+    </h5>
+    <p
+      class="c4"
+    >
+      John Doe
+    </p>
+    <p
+      class="c4"
+    >
+      bio Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <a
+      class="c5"
+      href="blog.com"
+    >
+      blog.com
+    </a>
+  </div>
+</div>
+`;

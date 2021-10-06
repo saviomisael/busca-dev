@@ -45,4 +45,10 @@ describe('<ProfileBox />', () => {
 
     expect(blogElement).toBeInTheDocument();
   });
+
+  it('should matches with snapshot', () => {
+    const { container } = global.renderTheme(<ProfileBox {...profileBoxPropsMock} />);
+
+    expect(container.firstChild).toMatchSnapshot();
+  });
 });
