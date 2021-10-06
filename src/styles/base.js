@@ -33,4 +33,10 @@ export const BaseStyles = createGlobalStyle`
   a {
     text-decoration: none;
   }
+
+  button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
 `;
