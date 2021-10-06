@@ -17,4 +17,12 @@ describe('<TextComponent />', () => {
 
     expect(text).toHaveStyleRule('font-size', '1.6rem');
   });
+
+  it('should matches with snapshot', () => {
+    global.renderTheme(<TextComponent>Children</TextComponent>);
+
+    const text = screen.getByText('Children');
+
+    expect(text).toMatchSnapshot();
+  });
 });
