@@ -19,6 +19,11 @@ export const ProfileBox = ({ avatar, username, fullname, bio, blog }) => {
   );
 };
 
+ProfileBox.defaultProps = {
+  bio: null,
+  blog: null,
+};
+
 ProfileBox.propTypes = {
   avatar: PropTypes.string.isRequired,
   username: PropTypes.string.isRequired,
