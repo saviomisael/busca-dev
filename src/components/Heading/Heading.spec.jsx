@@ -37,4 +37,12 @@ describe('<Heading />', () => {
     expect(heading).toHaveStyleRule('background', 'linear-gradient(#F5F5F5,#3C6E71)');
     expect(heading).toHaveStyleRule('background-clip', 'text');
   });
+
+  it('should matches with snapshot', () => {
+    global.renderTheme(<Heading>Children</Heading>);
+
+    const heading = screen.getByRole('heading', { name: 'Children' });
+
+    expect(heading).toMatchSnapshot();
+  });
 });

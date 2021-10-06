@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Heading /> should matches with snapshot 1`] = `
+.c0 {
+  color: #F5F5F5;
+  font-weight: 400;
+  font-family: 'Ubuntu',sans-serif;
+}
+
+<h1
+  class="c0"
+>
+  Children
+</h1>
+`;
