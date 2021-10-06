@@ -28,4 +28,13 @@ describe('<Heading />', () => {
     expect(heading).toHaveStyleRule('background', 'linear-gradient(#F5F5F5,#284B63)');
     expect(heading).toHaveStyleRule('background-clip', 'text');
   });
+
+  it('should renders component with a green gradient text', () => {
+    global.renderTheme(<Heading gradient="green">Children</Heading>);
+
+    const heading = screen.getByText('Children');
+
+    expect(heading).toHaveStyleRule('background', 'linear-gradient(#F5F5F5,#3C6E71)');
+    expect(heading).toHaveStyleRule('background-clip', 'text');
+  });
 });
