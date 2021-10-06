@@ -19,4 +19,12 @@ describe('<ProfileBox />', () => {
 
     expect(blogElement).not.toBeInTheDocument();
   });
+
+  it('should renders avatar image with alt containing username', () => {
+    global.renderTheme(<ProfileBox {...profileBoxPropsMock} />);
+
+    const avatarElement = screen.getByAltText(`${profileBoxPropsMock.username} avatar`);
+
+    expect(avatarElement).toBeInTheDocument();
+  });
 });
