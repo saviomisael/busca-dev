@@ -4,9 +4,11 @@ import { Heading } from '../Heading';
 import { TextComponent } from '../TextComponent';
 
 export const ProfileBox = ({ avatar, username, fullname, bio, blog }) => {
+  const alt = `${username} avatar`;
+
   return (
     <Styled.Container>
-      <Styled.Avatar src={avatar} alt={`${username} avatar`} />
+      <Styled.Avatar src={avatar} alt={alt} />
 
       <Styled.ProfileContent>
         <Heading as="h5">@{username}</Heading>
