@@ -14,4 +14,12 @@ describe('<RepoCard />', () => {
 
     expect(descriptionElement).not.toBeInTheDocument();
   });
+
+  it('should renders description when description prop is truthy', () => {
+    global.renderTheme(<RepoCard {...repoCardPropsMock} />);
+
+    const descriptionElement = screen.getByText(/Repository Description lorem/i);
+
+    expect(descriptionElement).toBeInTheDocument();
+  });
 });
