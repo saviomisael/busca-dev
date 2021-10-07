@@ -22,4 +22,10 @@ describe('<RepoCard />', () => {
 
     expect(descriptionElement).toBeInTheDocument();
   });
+
+  it('should matches with snapshot', () => {
+    const { container } = global.renderTheme(<RepoCard {...repoCardPropsMock} />);
+
+    expect(container.firstChild).toMatchSnapshot();
+  });
 });
