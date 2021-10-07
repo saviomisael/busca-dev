@@ -66,4 +66,16 @@ describe('<Button />', () => {
 
     expect(onClickMock).toHaveBeenCalledTimes(1);
   });
+
+  it('should matches with snapshot', () => {
+    global.renderTheme(
+      <Button onClick={onClickMock} size="medium">
+        Button
+      </Button>,
+    );
+
+    const button = screen.getByRole('button', { name: 'Button' });
+
+    expect(button).toMatchSnapshot();
+  });
 });
