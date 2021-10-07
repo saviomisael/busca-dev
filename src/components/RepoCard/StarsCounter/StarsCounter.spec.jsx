@@ -27,4 +27,10 @@ describe('<StarsCounter />', () => {
 
     expect(icon.src).toContain(StarFilled);
   });
+
+  it('should matches with snapshot', () => {
+    const { container } = global.renderTheme(<StarsCounter starsCount={5} />);
+
+    expect(container.firstChild).toMatchSnapshot();
+  });
 });
