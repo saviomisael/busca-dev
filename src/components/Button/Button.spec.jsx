@@ -37,4 +37,18 @@ describe('<Button />', () => {
       modifier: ':hover',
     });
   });
+
+  it('should goes down when button is clicked', () => {
+    global.renderTheme(
+      <Button onClick={onClickMock} size="medium">
+        Button
+      </Button>,
+    );
+
+    const button = screen.getByRole('button', { name: 'Button' });
+
+    expect(button).toHaveStyleRule('transform', 'translateY(0.8rem)', {
+      modifier: ':active',
+    });
+  });
 });
