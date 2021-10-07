@@ -15,7 +15,11 @@ export const ProfileBox = ({ avatar, username, fullname, bio, blog }) => {
         <TextComponent>{fullname}</TextComponent>
 
         {bio && <TextComponent>{bio}</TextComponent>}
-        {blog && <Styled.Blog href={blog}>{blog}</Styled.Blog>}
+        {blog && (
+          <Styled.Blog href={blog} target="_blank">
+            {blog}
+          </Styled.Blog>
+        )}
       </Styled.ProfileContent>
     </Styled.Container>
   );
