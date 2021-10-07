@@ -23,4 +23,18 @@ describe('<Button />', () => {
 
     expect(button).toHaveStyleRule('width', '85%');
   });
+
+  it('should be more brightness when button hover', () => {
+    global.renderTheme(
+      <Button onClick={onClickMock} size="medium">
+        Button
+      </Button>,
+    );
+
+    const button = screen.getByRole('button', { name: 'Button' });
+
+    expect(button).toHaveStyleRule('filter', 'brightness(1.2)', {
+      modifier: ':hover',
+    });
+  });
 });
