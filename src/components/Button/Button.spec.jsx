@@ -11,4 +11,18 @@ describe('<Button />', () => {
 
     expect(button).toHaveStyleRule('width', '100%');
   });
+
+  it('should renders component with medium size', () => {
+    const onClickMock = jest.fn();
+
+    global.renderTheme(
+      <Button onClick={onClickMock} size="medium">
+        Button
+      </Button>,
+    );
+
+    const button = screen.getByRole('button', { name: 'Button' });
+
+    expect(button).toHaveStyleRule('width', '85%');
+  });
 });
