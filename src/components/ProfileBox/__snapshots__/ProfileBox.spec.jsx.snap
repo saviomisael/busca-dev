@@ -86,6 +86,7 @@ exports[`<ProfileBox /> should matches with snapshot 1`] = `
     <a
       class="c5"
       href="blog.com"
+      target="_blank"
     >
       blog.com
     </a>
