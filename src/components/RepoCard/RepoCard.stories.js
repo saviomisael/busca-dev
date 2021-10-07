@@ -1,13 +1,14 @@
 import { RepoCard } from '.';
+import { repoCardPropsMock } from './mock';
 
 export default {
   title: 'RepoCard',
   component: RepoCard,
   args: {
-    repoName: 'repo name',
-    description: 'Repository Description lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    starsCount: 0,
-    repoUrl: 'github.com/repo',
+    repoName: repoCardPropsMock.repoName,
+    description: repoCardPropsMock.description,
+    starsCount: repoCardPropsMock.starsCount,
+    repoUrl: repoCardPropsMock.repoUrl,
   },
   argTypes: {
     repoName: { type: 'string' },
