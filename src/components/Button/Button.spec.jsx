@@ -1,4 +1,5 @@
 import { screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import { Button } from '.';
 
 describe('<Button />', () => {
@@ -50,5 +51,19 @@ describe('<Button />', () => {
     expect(button).toHaveStyleRule('transform', 'translateY(0.8rem)', {
       modifier: ':active',
     });
+  });
+
+  it('should call onClick function when button is clicked', () => {
+    global.renderTheme(
+      <Button onClick={onClickMock} size="medium">
+        Button
+      </Button>,
+    );
+
+    const button = screen.getByRole('button', { name: 'Button' });
+
+    userEvent.click(button);
+
+    expect(onClickMock).toHaveBeenCalledTimes(1);
   });
 });
