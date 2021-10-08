@@ -39,4 +39,8 @@ export const BaseStyles = createGlobalStyle`
     outline: none;
     cursor: pointer;
   }
+
+  ul {
+    list-style: none;
+  }
 `;
