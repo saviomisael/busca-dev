@@ -14,6 +14,6 @@ export const mapReposResponseOrderByStarsCount = (response) => {
   return response
     .map((x) => mapSingleRepoResponseToProps(x))
     .sort((a, b) => {
-      return a.starsCount - b.starsCount;
+      return b.starsCount - a.starsCount;
     });
 };
