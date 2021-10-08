@@ -37,4 +37,12 @@ describe('mapReposResponseOrderByStarsCount', () => {
     expect(result[0].starsCount).toEqual(0);
     expect(result[0].repoUrl).toEqual('repo1.com');
   });
+
+  it('should map repositories response order by starsCount', () => {
+    const result = mapReposResponseOrderByStarsCount(reposResponseMock);
+
+    expect(result[0].starsCount).toBe(3);
+    expect(result[1].starsCount).toBe(2);
+    expect(result[2].starsCount).toBe(0);
+  });
 });
