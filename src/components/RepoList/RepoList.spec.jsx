@@ -1,6 +1,6 @@
 import { screen } from '@testing-library/react';
 import { RepoList } from '.';
-import { repoListPropsMock } from './mock';
+import { repoListPropsMock, manyRepositories } from './mock';
 
 describe('<RepoList />', () => {
   it('should renders list empty message when repositories list is empty', () => {
@@ -17,5 +17,13 @@ describe('<RepoList />', () => {
     const listItem = screen.getAllByRole('listitem');
 
     expect(listItem.length).toBe(1);
+  });
+
+  it('should renders many li elements', () => {
+    global.renderTheme(<RepoList {...manyRepositories} />);
+
+    const listItem = screen.getAllByRole('listitem');
+
+    expect(listItem.length).toBe(4);
   });
 });
