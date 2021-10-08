@@ -8,14 +8,18 @@ export const RepoList = ({ repositories }) => {
   );
 
   if (repositories.length > 0) {
-    content = repositories.map(({ repoId, ...rest }) => (
-      <Styled.Item key={repoId}>
-        <RepoCard {...rest} />
-      </Styled.Item>
-    ));
+    content = (
+      <Styled.List>
+        {repositories.map(({ repoId, ...rest }) => (
+          <Styled.Item key={repoId}>
+            <RepoCard {...rest} />
+          </Styled.Item>
+        ))}
+      </Styled.List>
+    );
   }
 
-  return <Styled.List>{content}</Styled.List>;
+  return <>{content}</>;
 };
 
 RepoList.propTypes = {
