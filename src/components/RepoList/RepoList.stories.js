@@ -1,5 +1,5 @@
 import { RepoList } from '.';
-import { repoListPropsMock } from './mock';
+import { repoListPropsMock, manyRepositories } from './mock';
 
 export default {
   title: 'RepoList',
@@ -29,4 +29,10 @@ WithoutRepositories.parameters = {
   backgrounds: {
     default: 'light',
   },
+};
+
+export const WithManyRepositories = Default.bind({});
+
+WithManyRepositories.args = {
+  repositories: manyRepositories.repositories,
 };
