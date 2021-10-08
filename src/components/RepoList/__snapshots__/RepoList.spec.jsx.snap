@@ -1,0 +1,217 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RepoList /> should matches with snapshot 1`] = `
+.c0 {
+  padding: 2rem;
+  border-radius: 0.6rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  row-gap: 2rem;
+  background: linear-gradient(#D9D9D9BB,#353535CC);
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-column-gap: 0.7rem;
+  column-gap: 0.7rem;
+}
+
+.c7 {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: #284B63;
+}
+
+.c6 {
+  -webkit-filter: invert(23%) sepia(6%) saturate(4839%) hue-rotate(162deg) brightness(93%) contrast(82%);
+  filter: invert(23%) sepia(6%) saturate(4839%) hue-rotate(162deg) brightness(93%) contrast(82%);
+}
+
+.c1 {
+  padding: 1.5rem;
+  border-radius: 0.6rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  row-gap: 1rem;
+  background-color: #D9D9D9;
+}
+
+.c1 > * {
+  font-size: 1.8rem;
+  color: #353535;
+}
+
+.c1 > .c4 {
+  margin-top: 1rem;
+}
+
+.c2 {
+  font-weight: 600;
+}
+
+.c3 {
+  font-weight: 500;
+}
+
+<ul
+  class="c0"
+>
+  <li
+    class=""
+  >
+    <article
+      class="c1"
+    >
+      <a
+        class="c2"
+        href="github.com/repo"
+        target="_blank"
+      >
+        repo name
+      </a>
+      <p
+        class="c3"
+      >
+        Repository Description lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+      <div
+        class="c4 c5"
+      >
+        <img
+          alt="star icon"
+          class="c6"
+          src="star_empty.svg"
+        />
+        <p
+          class="c7"
+        >
+          0
+           Estrelas
+        </p>
+      </div>
+    </article>
+  </li>
+  <li
+    class=""
+  >
+    <article
+      class="c1"
+    >
+      <a
+        class="c2"
+        href="github.com/repo"
+        target="_blank"
+      >
+        repo name
+      </a>
+      <p
+        class="c3"
+      >
+        Repository Description lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+      <div
+        class="c4 c5"
+      >
+        <img
+          alt="star icon"
+          class="c6"
+          src="star_fill.svg"
+        />
+        <p
+          class="c7"
+        >
+          3
+           Estrelas
+        </p>
+      </div>
+    </article>
+  </li>
+  <li
+    class=""
+  >
+    <article
+      class="c1"
+    >
+      <a
+        class="c2"
+        href="github.com/repo"
+        target="_blank"
+      >
+        repo name
+      </a>
+      <p
+        class="c3"
+      >
+        Repository Description lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+      <div
+        class="c4 c5"
+      >
+        <img
+          alt="star icon"
+          class="c6"
+          src="star_empty.svg"
+        />
+        <p
+          class="c7"
+        >
+          0
+           Estrelas
+        </p>
+      </div>
+    </article>
+  </li>
+  <li
+    class=""
+  >
+    <article
+      class="c1"
+    >
+      <a
+        class="c2"
+        href="github.com/repo"
+        target="_blank"
+      >
+        repo name
+      </a>
+      <p
+        class="c3"
+      >
+        Repository Description lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+      <div
+        class="c4 c5"
+      >
+        <img
+          alt="star icon"
+          class="c6"
+          src="star_fill.svg"
+        />
+        <p
+          class="c7"
+        >
+          5
+           Estrelas
+        </p>
+      </div>
+    </article>
+  </li>
+</ul>
+`;

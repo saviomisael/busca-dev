@@ -26,4 +26,10 @@ describe('<RepoList />', () => {
 
     expect(listItem.length).toBe(4);
   });
+
+  it('should matches with snapshot', () => {
+    const { container } = global.renderTheme(<RepoList {...manyRepositories} />);
+
+    expect(container.firstChild).toMatchSnapshot();
+  });
 });
