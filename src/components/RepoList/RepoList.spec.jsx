@@ -14,9 +14,9 @@ describe('<RepoList />', () => {
   it('should renders a list of RepoCard when repositories length greater than zero', () => {
     global.renderTheme(<RepoList {...repoListPropsMock} />);
 
-    const listItem = screen.getAllByRole('listitem');
+    const listElement = screen.getByRole('list');
 
-    expect(listItem.length).toBe(1);
+    expect(listElement).toBeInTheDocument();
   });
 
   it('should renders many li elements', () => {
