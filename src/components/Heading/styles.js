@@ -18,6 +18,7 @@ const gradientsTitle = {
 };
 
 export const Title = styled.h1`
+  margin-top: 0;
   ${({ theme, gradient }) => css`
     color: ${theme.colors.white};
     font-weight: 400;
