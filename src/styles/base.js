@@ -16,12 +16,12 @@ export const BaseStyles = createGlobalStyle`
   html,
   body {
     font-size: 62.5%;
-    width: 100%;
-    height: 100%;
   }
 
   body {
     font-family: ${({ theme }) => theme.fonts.family.notoSans};
+    width: 100%;
+    height: 100%;
   }
 
   h1 {
