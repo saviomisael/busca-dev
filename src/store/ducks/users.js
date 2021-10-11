@@ -38,4 +38,4 @@ const usersSlice = createSlice({
   },
 });
 
-export const { actions: usersActions, reducer: usersReducers } = usersSlice;
+export const { actions: usersActions, reducer: usersReducer } = usersSlice;
