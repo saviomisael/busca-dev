@@ -36,4 +36,10 @@ describe('users duck', () => {
       userNotFoundStatus: false,
     });
   });
+
+  it('should update user not found to true', () => {
+    const usersStateMutated = usersReducer(initialState, usersActions.updateUserStatus());
+
+    expect(usersStateMutated.userNotFoundStatus).toBe(true);
+  });
 });
