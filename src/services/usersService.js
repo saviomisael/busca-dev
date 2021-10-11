@@ -9,7 +9,7 @@ export const getUserInfo = async (username) => {
     cancelToken: cancelRequest.token,
   });
 
-  return mapUserResponseToProps(response);
+  return mapUserResponseToProps(response.data);
 };
 
 export const cancelGetUserInfo = () => {
