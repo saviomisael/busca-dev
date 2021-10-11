@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Sidebar /> should matches with snapshot 1`] = `
+.c8 {
+  text-transform: uppercase;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.8rem;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  font-size: 1.8rem;
+  background: #353535;
+  color: #F5F5F5;
+  width: 100%;
+}
+
+.c8:hover {
+  -webkit-filter: brightness(1.2);
+  filter: brightness(1.2);
+}
+
+.c8:active {
+  -webkit-transform: translateY(0.8rem);
+  -ms-transform: translateY(0.8rem);
+  transform: translateY(0.8rem);
+}
+
+.c0 > .c7 {
+  margin-top: 0.8rem;
+}
+
+.c1 {
+  padding: 1rem;
+  text-align: center;
+}
+
+.c3 {
+  text-align: start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.c2 {
+  width: 14.8rem;
+  height: 14.8rem;
+}
+
+.c6 {
+  color: #F5F5F5;
+  font-size: 1.8rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-column-gap: 2rem;
+  column-gap: 2rem;
+}
+
+.c6::before {
+  content: url(link_white.svg);
+  -webkit-transform: translateY(0.2rem);
+  -ms-transform: translateY(0.2rem);
+  transform: translateY(0.2rem);
+}
+
+.c4 {
+  color: #F5F5F5;
+  font-weight: 400;
+  font-family: 'Ubuntu',sans-serif;
+}
+
+.c5 {
+  font-size: 1.8rem;
+  color: #F5F5F5;
+}
+
+<aside
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <img
+      alt="johndoe avatar"
+      class="c2"
+      src="person_white.svg"
+    />
+    <div
+      class="c3"
+    >
+      <h5
+        class="c4"
+      >
+        @
+        johndoe
+      </h5>
+      <p
+        class="c5"
+      >
+        John Doe
+      </p>
+      <p
+        class="c5"
+      >
+        bio Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+      <a
+        class="c6"
+        href="blog.com"
+        target="_blank"
+      >
+        blog.com
+      </a>
+    </div>
+  </div>
+  <button
+    class="c7 c8"
+  >
+    Voltar
+  </button>
+</aside>
+`;
