@@ -1,7 +1,7 @@
 import { Button } from '.';
 
 export default {
-  title: 'Button',
+  title: 'components/Button',
   component: Button,
   args: {
     children: 'Some text',
