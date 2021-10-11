@@ -1,7 +1,7 @@
 import { StarsCounter } from '.';
 
 export default {
-  title: 'StarsCounter',
+  title: 'components/RepoCard/StarsCounter',
   component: StarsCounter,
   args: {
     starsCount: 0,
