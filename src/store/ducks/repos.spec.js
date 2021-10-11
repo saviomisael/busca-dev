@@ -22,4 +22,10 @@ describe('repos duck', () => {
       hasError: false,
     });
   });
+
+  it('should change hasError to true when dispatch updateHasError', () => {
+    const reposState = reposReducer(initialState, reposActions.updateHasError());
+
+    expect(reposState.hasError).toBe(true);
+  });
 });
