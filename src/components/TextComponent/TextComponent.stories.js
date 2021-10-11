@@ -1,7 +1,7 @@
 import { TextComponent } from '.';
 
 export default {
-  title: 'TextComponent',
+  title: 'components/TextComponent',
   component: TextComponent,
   args: {
     children: 'Some text',
