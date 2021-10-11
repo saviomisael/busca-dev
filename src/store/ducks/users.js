@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { getUserInfo } from '../../services/usersService';
 
 const initialState = {
-  userrInfo: {
+  userInfo: {
     avatar: '',
     username: '',
     fullname: '',
