@@ -2,7 +2,7 @@ import { RepoList } from '.';
 import { repoListPropsMock, manyRepositories } from './mock';
 
 export default {
-  title: 'RepoList',
+  title: 'components/RepoList',
   component: RepoList,
   args: {
     repositories: [].concat(repoListPropsMock.repositories),
