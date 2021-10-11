@@ -4,7 +4,8 @@ import * as MainContentStyled from './MainContent/styles';
 export const Container = styled.div`
   text-align: center;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  padding: 3rem;
   ${({ theme }) =>
     css`
       background: linear-gradient(${theme.colors.black}, ${theme.colors.first});
