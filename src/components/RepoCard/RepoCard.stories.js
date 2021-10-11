@@ -2,7 +2,7 @@ import { RepoCard } from '.';
 import { repoCardPropsMock } from './mock';
 
 export default {
-  title: 'RepoCard',
+  title: 'components/RepoCard',
   component: RepoCard,
   args: {
     repoName: repoCardPropsMock.repoName,
