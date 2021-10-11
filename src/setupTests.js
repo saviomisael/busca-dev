@@ -10,9 +10,7 @@ import { theme } from './styles/theme';
 import { Provider } from 'react-redux';
 import { storeMock } from './store/store-mock';
 
-global.renderTheme = (children) => {
-  return render(<ThemeProvider theme={theme}>{children}</ThemeProvider>);
-};
+global.renderTheme = (children) => render(<ThemeProvider theme={theme}>{children}</ThemeProvider>);
 
 global.renderStoreProviderWithTheme = (children) =>
   render(
