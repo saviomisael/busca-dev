@@ -13,7 +13,9 @@ describe('users duck', () => {
   };
 
   it('should return the initial state', () => {
-    expect(usersReducer(undefined, {})).toEqual(initialState);
+    const usersStateMutated = usersReducer(undefined, {});
+
+    expect(usersStateMutated).toEqual(initialState);
   });
 
   it('should change user info', () => {
@@ -25,7 +27,9 @@ describe('users duck', () => {
       blog: 'blog.com',
     };
 
-    expect(usersReducer(initialState, usersActions.changeUserInfo(payload))).toEqual({
+    const usersStateMutated = usersReducer(initialState, usersActions.changeUserInfo(payload));
+
+    expect(usersStateMutated).toEqual({
       userInfo: {
         avatar: 'avatar.png',
         username: 'johndoe',
