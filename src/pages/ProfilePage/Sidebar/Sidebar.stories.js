@@ -7,6 +7,7 @@ export default {
   args: {},
   argTypes: {},
   parameters: {
+    controls: { hideNoControlsWarning: true },
     backgrounds: {
       default: 'dark',
       values: [
