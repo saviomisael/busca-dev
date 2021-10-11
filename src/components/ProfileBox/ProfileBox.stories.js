@@ -2,7 +2,7 @@ import { ProfileBox } from '.';
 import { profileBoxPropsMock } from './mock';
 
 export default {
-  title: 'ProfileBox',
+  title: 'components/ProfileBox',
   component: ProfileBox,
   args: {
     avatar: profileBoxPropsMock.avatar,
