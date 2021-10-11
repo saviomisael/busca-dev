@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<MainContent /> should renders component 1`] = `
+exports[`<MainContent /> should matches with snapshot 1`] = `
 .c0 {
   padding: 2rem;
   border-radius: 0.6rem;

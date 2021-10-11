@@ -74,6 +74,7 @@ exports[`<Sidebar /> should matches with snapshot 1`] = `
 }
 
 .c4 {
+  margin-top: 0;
   color: #F5F5F5;
   font-weight: 400;
   font-family: 'Ubuntu',sans-serif;
