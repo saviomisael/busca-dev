@@ -55,4 +55,18 @@ describe('<ProfilePage />', () => {
       expect(screen.getByRole('heading', { name: /lukeskywalker/i })).toBeInTheDocument();
     });
   });
+
+  it('should renders main content with repositories response data mock', async () => {
+    global.withRoutes(<ProfilePage />, { initialRoutes: [`/profile/lukeskywalker`] });
+
+    const lukeHeading = screen.queryByRole('heading', { name: /lukeskywalker/i });
+
+    await waitFor(() => {
+      expect(lukeHeading).toBeInTheDocument();
+    });
+
+    const allRepos = screen.getAllByRole('listitem');
+
+    expect(allRepos).toHaveLength(6);
+  });
 });
