@@ -5,9 +5,9 @@ export const mapUserResponseToProps = (response) => {
 };
 
 const mapSingleRepoResponseToProps = (singleRepo) => {
-  const { id, name, description, stargazers_count, url } = singleRepo;
+  const { id, name, description, stargazers_count, html_url } = singleRepo;
 
-  return { repoId: id, repoName: name, description, starsCount: stargazers_count, repoUrl: url };
+  return { repoId: id, repoName: name, description, starsCount: stargazers_count, repoUrl: html_url };
 };
 
 export const mapReposResponseOrderByStarsCount = (response) => {
