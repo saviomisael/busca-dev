@@ -23,9 +23,9 @@ describe('mapResponseToProps', () => {
 
 describe('mapReposResponseOrderByStarsCount', () => {
   const reposResponseMock = [
-    { id: 1, name: 'repo 1', description: 'description 1', stargazers_count: 0, url: 'repo1.com' },
-    { id: 2, name: 'repo 2', description: 'description 2', stargazers_count: 3, url: 'repo2.com' },
-    { id: 3, name: 'repo 3', description: 'description 3', stargazers_count: 2, url: 'repo3.com' },
+    { id: 1, name: 'repo 1', description: 'description 1', stargazers_count: 0, html_url: 'repo1.com' },
+    { id: 2, name: 'repo 2', description: 'description 2', stargazers_count: 3, html_url: 'repo2.com' },
+    { id: 3, name: 'repo 3', description: 'description 3', stargazers_count: 2, html_url: 'repo3.com' },
   ];
 
   it('should map repositories response to props', () => {
