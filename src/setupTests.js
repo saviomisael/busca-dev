@@ -6,6 +6,7 @@ import '@testing-library/jest-dom';
 import 'jest-styled-components';
 import { render } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
+import { MemoryRouter, Route, Switch } from 'react-router';
 import { theme } from './styles/theme';
 import { Provider } from 'react-redux';
 import { storeMock } from './store/store-mock';
@@ -18,3 +19,19 @@ global.renderStoreProviderWithTheme = (children) =>
       <ThemeProvider theme={theme}>{children}</ThemeProvider>
     </Provider>,
   );
+
+global.withRoutes = (children, options) => {
+  const initialRoutes = options && options.initialRoutes ? options.initialRoutes : ['/'];
+
+  return render(
+    <Provider store={storeMock}>
+      <ThemeProvider theme={theme}>
+        <MemoryRouter initialEntries={initialRoutes}>
+          <Switch>
+            <Route path="/profile/:username" render={() => children} />
+          </Switch>
+        </MemoryRouter>
+      </ThemeProvider>
+    </Provider>,
+  );
+};
