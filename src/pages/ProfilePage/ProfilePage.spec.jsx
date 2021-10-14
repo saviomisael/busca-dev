@@ -25,6 +25,9 @@ const handlers = [
         { id: 1, name: 'luke repo 1', description: 'description 1', stargazers_count: 0, html_url: 'repo1.com' },
         { id: 2, name: 'luke repo 2', description: 'description 2', stargazers_count: 3, html_url: 'repo2.com' },
         { id: 3, name: 'luke repo 3', description: 'description 3', stargazers_count: 2, html_url: 'repo3.com' },
+        { id: 4, name: 'luke repo 4', description: 'description 4', stargazers_count: 2, html_url: 'repo4.com' },
+        { id: 5, name: 'luke repo 5', description: 'description 5', stargazers_count: 6, html_url: 'repo5.com' },
+        { id: 6, name: 'luke repo 6', description: 'description 6', stargazers_count: 2, html_url: 'repo6.com' },
       ]),
     );
   }),
@@ -48,7 +51,7 @@ describe('<ProfilePage />', () => {
   it('should renders user info with response data mock', async () => {
     global.withRoutes(<ProfilePage />, { initialRoutes: [`/profile/lukeskywalker`] });
 
-    waitFor(() => {
+    await waitFor(() => {
       expect(screen.getByRole('heading', { name: /lukeskywalker/i })).toBeInTheDocument();
     });
   });
