@@ -1,3 +1,4 @@
+import { MemoryRouter, Switch, Route } from 'react-router-dom';
 import { ProfilePage } from '.';
 
 export default {
@@ -14,3 +15,13 @@ export default {
 };
 
 export const Default = (args) => <ProfilePage {...args} />;
+
+Default.decorators = [
+  (Story) => (
+    <MemoryRouter initialEntries={[`/profile/octocat`]}>
+      <Switch>
+        <Route path="/profile/:username" render={() => <Story />} />
+      </Switch>
+    </MemoryRouter>
+  ),
+];
