@@ -28,7 +28,7 @@ global.withRoutes = (children, options) => {
       <ThemeProvider theme={theme}>
         <MemoryRouter initialEntries={initialRoutes}>
           <Switch>
-            <Route path="/profile/:username" render={() => children} />
+            <Route path={options.pathname} render={() => children} />
           </Switch>
         </MemoryRouter>
       </ThemeProvider>

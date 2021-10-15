@@ -49,7 +49,7 @@ describe('<ProfilePage />', () => {
   });
 
   it('should renders user info with response data mock', async () => {
-    global.withRoutes(<ProfilePage />, { initialRoutes: [`/profile/lukeskywalker`] });
+    global.withRoutes(<ProfilePage />, { initialRoutes: [`/profile/lukeskywalker`], pathname: '/profile/:username' });
 
     await waitFor(() => {
       expect(screen.getByRole('heading', { name: /lukeskywalker/i })).toBeInTheDocument();
