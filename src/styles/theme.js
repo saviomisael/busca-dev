@@ -19,4 +19,7 @@ export const theme = {
       huge: '4rem',
     },
   },
+  media: {
+    ipadPro: 'min-width: 1024px',
+  },
 };
