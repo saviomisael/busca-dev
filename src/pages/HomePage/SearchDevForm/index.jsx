@@ -12,7 +12,7 @@ export const SearchDevForm = ({ onSubmit }) => {
 
   return (
     <Styled.Form onSubmit={handleSubmit(onSubmit)}>
-      <Styled.Input placeholder="Insira aqui o username do github" {...register('username')} />
+      <Styled.Input placeholder="Digite o username do github" {...register('username')} />
       <Styled.ButtonSubmit disabled={isSubmitted}>
         <SearchIcon />
       </Styled.ButtonSubmit>

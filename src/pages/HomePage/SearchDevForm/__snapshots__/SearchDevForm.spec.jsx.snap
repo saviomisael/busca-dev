@@ -81,7 +81,7 @@ exports[`<SearchDevForm /> should matches with snapshot 1`] = `
   <input
     class="c1"
     name="username"
-    placeholder="Insira aqui o username do github"
+    placeholder="Digite o username do github"
   />
   <button
     class="c2"
