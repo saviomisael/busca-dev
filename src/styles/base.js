@@ -45,4 +45,8 @@ export const BaseStyles = createGlobalStyle`
   ul {
     list-style: none;
   }
+
+  input {
+    outline: none;
+  }
 `;
