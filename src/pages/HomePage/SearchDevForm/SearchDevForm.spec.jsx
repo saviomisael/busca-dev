@@ -18,4 +18,12 @@ describe('<SearchDevForm />', () => {
 
     expect(onSubmitMock).toBeCalledTimes(1);
   });
+
+  it('should matches with snapshot', () => {
+    const onSubmitMock = jest.fn();
+
+    const { container } = global.renderTheme(<SearchDevForm onSubmit={onSubmitMock} />);
+
+    expect(container.firstChild).toMatchSnapshot();
+  });
 });

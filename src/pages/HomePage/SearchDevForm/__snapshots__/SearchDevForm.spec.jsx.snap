@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SearchDevForm /> should matches with snapshot 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  border-radius: 0.6rem;
+  width: 100%;
+  background: #D9D9D9;
+}
+
+.c0 > * {
+  background-color: transparent;
+}
+
+.c1 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border: none;
+  font-size: 1.4rem;
+  color: #353535;
+}
+
+.c1::-webkit-input-placeholder {
+  color: #353535CC;
+  font-size: 1.4rem;
+}
+
+.c1::-moz-placeholder {
+  color: #353535CC;
+  font-size: 1.4rem;
+}
+
+.c1:-ms-input-placeholder {
+  color: #353535CC;
+  font-size: 1.4rem;
+}
+
+.c1::placeholder {
+  color: #353535CC;
+  font-size: 1.4rem;
+}
+
+.c2 {
+  border-top-right-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+
+.c2:hover,
+.c2:active {
+  background: #D9D9D9;
+}
+
+.c2:hover {
+  -webkit-filter: brightness(0.9);
+  filter: brightness(0.9);
+}
+
+.c2:active {
+  -webkit-filter: brightness(1.08);
+  filter: brightness(1.08);
+}
+
+.c2:disabled {
+  cursor: not-allowed;
+}
+
+.c3 {
+  -webkit-filter: invert(16%) sepia(1%) saturate(0%) hue-rotate(332deg) brightness(102%) contrast(86%);
+  filter: invert(16%) sepia(1%) saturate(0%) hue-rotate(332deg) brightness(102%) contrast(86%);
+}
+
+<form
+  class="c0"
+>
+  <input
+    class="c1"
+    name="username"
+    placeholder="Insira aqui o username do github"
+  />
+  <button
+    class="c2"
+    type="submit"
+  >
+    <img
+      class="c3"
+      src="search_icon.svg"
+    />
+  </button>
+</form>
+`;
