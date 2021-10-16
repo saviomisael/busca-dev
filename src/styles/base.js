@@ -16,6 +16,10 @@ export const BaseStyles = createGlobalStyle`
   html,
   body {
     font-size: 62.5%;
+
+    @media (${({ theme }) => theme.media.ipadPro}) {
+      font-size: 81.25%;
+    }
   }
 
   body {
