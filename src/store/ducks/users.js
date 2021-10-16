@@ -33,6 +33,9 @@ const usersSlice = createSlice({
       state.userInfo = action.payload;
     },
     updateUserStatus: (state) => {
+      state.userNotFoundStatus = true;
+    },
+    clearUsersState: (state) => {
       state.userInfo = {
         avatar: '',
         username: '',
@@ -40,7 +43,7 @@ const usersSlice = createSlice({
         bio: '',
         blog: '',
       };
-      state.userNotFoundStatus = true;
+      state.userNotFoundStatus = false;
     },
   },
 });
