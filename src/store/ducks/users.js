@@ -13,14 +13,14 @@ const initialState = {
 };
 
 export const getUserInfoThunk = createAsyncThunk('users/getUserInfo', async (username, { dispatch }) => {
-  try {
-    const response = await getUserInfo(username);
+  const response = await getUserInfo(username);
 
+  if (!response.status) {
     dispatch(usersActions.changeUserInfo(response));
-  } catch (error) {
-    if (error.response && error.response.status === 404) {
-      dispatch(usersActions.updateUserStatus);
-    }
+  }
+
+  if (response.status && response.status === 404) {
+    dispatch(usersActions.updateUserStatus());
   }
 });
 
@@ -33,6 +33,13 @@ const usersSlice = createSlice({
       state.userInfo = action.payload;
     },
     updateUserStatus: (state) => {
+      state.userInfo = {
+        avatar: '',
+        username: '',
+        fullname: '',
+        bio: '',
+        blog: '',
+      };
       state.userNotFoundStatus = true;
     },
   },
