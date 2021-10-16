@@ -6,6 +6,8 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  row-gap: 5rem;
 
   ${({ theme }) => css`
     background: linear-gradient(${theme.colors.black + 'dd'}, ${theme.colors.first});
