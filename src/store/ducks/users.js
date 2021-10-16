@@ -1,5 +1,6 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { getUserInfo } from '../../services/usersService';
+import { uiActions } from './ui';
 
 const initialState = {
   userInfo: {
@@ -22,6 +23,8 @@ export const getUserInfoThunk = createAsyncThunk('users/getUserInfo', async (use
   if (response.status && response.status === 404) {
     dispatch(usersActions.updateUserStatus());
   }
+
+  dispatch(uiActions.setIsLoading(false));
 });
 
 const usersSlice = createSlice({
