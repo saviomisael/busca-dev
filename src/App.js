@@ -1,4 +1,5 @@
 import { ThemeProvider } from 'styled-components';
+import { HelmetProvider } from 'react-helmet-async';
 import { StoreProvider } from './store/StoreProvider';
 import { BaseStyles } from './styles/base';
 import { theme } from './styles/theme';
@@ -8,8 +9,10 @@ const App = () => {
   return (
     <StoreProvider>
       <ThemeProvider theme={theme}>
-        <BaseStyles />
-        <AppRouter />
+        <HelmetProvider>
+          <BaseStyles />
+          <AppRouter />
+        </HelmetProvider>
       </ThemeProvider>
     </StoreProvider>
   );
