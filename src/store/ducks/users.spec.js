@@ -46,4 +46,19 @@ describe('users duck', () => {
 
     expect(usersStateMutated.userNotFoundStatus).toBe(true);
   });
+
+  it('should clear users state', () => {
+    const usersStateMutated = usersReducer(initialState, usersActions.clearUsersState());
+
+    expect(usersStateMutated).toEqual({
+      userInfo: {
+        avatar: '',
+        username: '',
+        fullname: '',
+        bio: '',
+        blog: '',
+      },
+      userNotFoundStatus: false,
+    });
+  });
 });
