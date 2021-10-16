@@ -1,17 +1,21 @@
 import { useHistory } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
+import { useDispatch } from 'react-redux';
 import * as Styled from './styles';
 import { Heading } from '../../components/Heading';
 import { SearchDevForm } from './SearchDevForm';
+import { uiActions } from '../../store/ducks/ui';
 
 export const HomePage = () => {
   const history = useHistory();
+  const dispatch = useDispatch();
 
   const handleSubmit = ({ username }) => {
     if (!username) {
       username = 'saviomisael';
     }
 
+    dispatch(uiActions.setIsLoading(true));
     history.push(`/profile/${username}`);
   };
 
