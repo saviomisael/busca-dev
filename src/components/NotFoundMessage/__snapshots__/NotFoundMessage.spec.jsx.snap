@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NotFoundMessage /> should matches with snapshot 1`] = `
+.c0 {
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-filter: brightness(0.8);
+  filter: brightness(0.8);
+  color: #353535;
+  font-size: 8.5rem;
+  font-family: 'Ubuntu',sans-serif;
+}
+
+.c3 {
+  color: #F5F5F5;
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+.c1 > .c2 {
+  -webkit-animation: jaKUeX 1s ease-in-out infinite alternate;
+  animation: jaKUeX 1s ease-in-out infinite alternate;
+}
+
+.c4 {
+  font-size: 2.2rem;
+}
+
+<div
+  class="c0"
+>
+  <p
+    class="c1"
+  >
+    Erro 
+    <span
+      class="c2 c3"
+    >
+      404
+    </span>
+  </p>
+  <p
+    class="c1 c4"
+  >
+    <span
+      class="c2 c3"
+    >
+      Oops
+    </span>
+    , conteúdo não encontrado!
+  </p>
+</div>
+`;
