@@ -1,5 +1,5 @@
 import { useHistory } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import * as Styled from './styles';
 import { NotFoundMessage } from '../../components/NotFoundMessage';
 import { Button } from '../../components/Button';
