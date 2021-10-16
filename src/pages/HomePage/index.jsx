@@ -1,7 +1,8 @@
+import { useHistory } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import * as Styled from './styles';
 import { Heading } from '../../components/Heading';
 import { SearchDevForm } from './SearchDevForm';
-import { useHistory } from 'react-router-dom';
 
 export const HomePage = () => {
   const history = useHistory();
@@ -16,6 +17,9 @@ export const HomePage = () => {
 
   return (
     <Styled.Container>
+      <Helmet titleTemplate="%s | Busca Dev">
+        <title>Home</title>
+      </Helmet>
       <Heading gradient="green">Search Devs</Heading>
       <Styled.Main>
         <SearchDevForm onSubmit={handleSubmit} />
