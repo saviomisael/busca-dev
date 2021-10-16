@@ -1,17 +1,14 @@
-import axios from 'axios';
 import api from './api';
 import { mapUserResponseToProps } from '../utils/mapResponseToProps';
 
-const cancelRequest = axios.CancelToken.source();
-
 export const getUserInfo = async (username) => {
-  const response = await api.get(`/users/${username}`, {
-    cancelToken: cancelRequest.token,
-  });
+  try {
+    const response = await api.get(`/users/${username}`, {});
 
-  return mapUserResponseToProps(response.data);
-};
-
-export const cancelGetUserInfo = () => {
-  cancelRequest.cancel();
+    return mapUserResponseToProps(response.data);
+  } catch (error) {
+    if (error.response.status && error.response.status === 404) {
+      return { ...error.response };
+    }
+  }
 };
