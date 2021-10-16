@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Dots /> should matches with snapshot 1`] = `
+.c0 {
+  display: inline-block;
+  background: linear-gradient(#F5F5F5,#284B63);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 8.5rem;
+}
+
+.c0:first-child {
+  -webkit-animation: ilFKjG 2s ease-in-out infinite;
+  animation: ilFKjG 2s ease-in-out infinite;
+}
+
+.c0:nth-child(2) {
+  -webkit-animation: ilFKjG 2s 0.1s ease-in-out infinite;
+  animation: ilFKjG 2s 0.1s ease-in-out infinite;
+}
+
+.c0:nth-child(3) {
+  -webkit-animation: ilFKjG 2s 0.2s ease-in-out infinite;
+  animation: ilFKjG 2s 0.2s ease-in-out infinite;
+}
+
+<span
+  class="c0"
+>
+  ·
+</span>
+`;
