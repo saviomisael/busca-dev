@@ -7,8 +7,6 @@ import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { getUserInfoThunk } from '../../store/ducks/users';
 import { getRepositoriesThunk } from '../../store/ducks/repos';
-import { cancelGetUserInfo } from '../../services/usersService';
-import { cancelGetRepos } from '../../services/reposService';
 
 export const ProfilePage = () => {
   const { username } = useParams();
@@ -17,11 +15,6 @@ export const ProfilePage = () => {
   useEffect(() => {
     dispatch(getUserInfoThunk(username));
     dispatch(getRepositoriesThunk(username));
-
-    return () => {
-      cancelGetUserInfo();
-      cancelGetRepos();
-    };
   }, [username, dispatch]);
 
   return (
