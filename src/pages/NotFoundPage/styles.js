@@ -3,13 +3,11 @@ import styled, { css } from 'styled-components';
 export const Container = styled.div`
   min-height: 100vh;
   max-width: 100vw;
-  padding: 50% 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   ${({ theme }) => css`
     background: linear-gradient(${theme.colors.black + 'dd'}, ${theme.colors.first});
-
-    @media (${theme.media.ipadPro}) {
-      padding: 25% 0;
-    }
   `}
 `;
