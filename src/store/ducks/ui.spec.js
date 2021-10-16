@@ -10,4 +10,14 @@ describe('ui duck', () => {
 
     expect(modifiedState.isLoading).toBe(true);
   });
+
+  it('should set isLoading to false', () => {
+    const initialState = {
+      isLoading: false,
+    };
+
+    const modifiedState = uiReducer(initialState, uiActions.setIsLoading(false));
+
+    expect(modifiedState.isLoading).toBe(false);
+  });
 });
