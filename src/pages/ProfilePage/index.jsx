@@ -1,4 +1,5 @@
 import { useParams } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import * as Styled from './styles';
 import { Sidebar } from './Sidebar';
 import { Heading } from '../../components/Heading';
@@ -19,6 +20,9 @@ export const ProfilePage = () => {
 
   return (
     <Styled.Container>
+      <Helmet titleTemplate="%s | Busca Dev">
+        <title>Perfil</title>
+      </Helmet>
       <Heading gradient="blue">Perfil</Heading>
       <Styled.Content>
         <Sidebar />
