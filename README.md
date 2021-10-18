@@ -17,6 +17,7 @@
 - [Redux Toolkit](https://redux-toolkit.js.org/)
 - [React Router DOM](https://reactrouter.com/)
 - [React Helmet Async](https://github.com/staylor/react-helmet-async)
+- [React Hook Form](https://react-hook-form.com/)
 
 # Available Scripts
 
