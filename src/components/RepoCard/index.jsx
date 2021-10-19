@@ -5,7 +5,7 @@ import * as Styled from './styles';
 export const RepoCard = ({ repoName, description, starsCount, repoUrl }) => {
   let content = (
     <>
-      <Styled.RepoName href={repoUrl} target="_blank">
+      <Styled.RepoName href={repoUrl} target="_blank" rel="noopener">
         {repoName}
       </Styled.RepoName>
       {description && <Styled.Description>{description}</Styled.Description>}
