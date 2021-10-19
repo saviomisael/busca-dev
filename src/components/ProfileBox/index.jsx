@@ -16,7 +16,7 @@ export const ProfileBox = ({ avatar, username, fullname, bio, blog }) => {
 
         {bio && <TextComponent>{bio}</TextComponent>}
         {blog && (
-          <Styled.Blog href={blog} target="_blank">
+          <Styled.Blog href={blog} target="_blank" rel="noopener">
             {blog}
           </Styled.Blog>
         )}
