@@ -82,6 +82,7 @@ exports[`<RepoList /> should matches with snapshot 1`] = `
       <a
         class="c2"
         href="github.com/repo"
+        rel="noopener"
         target="_blank"
       >
         repo name
@@ -117,6 +118,7 @@ exports[`<RepoList /> should matches with snapshot 1`] = `
       <a
         class="c2"
         href="github.com/repo"
+        rel="noopener"
         target="_blank"
       >
         repo name
@@ -152,6 +154,7 @@ exports[`<RepoList /> should matches with snapshot 1`] = `
       <a
         class="c2"
         href="github.com/repo"
+        rel="noopener"
         target="_blank"
       >
         repo name
@@ -187,6 +190,7 @@ exports[`<RepoList /> should matches with snapshot 1`] = `
       <a
         class="c2"
         href="github.com/repo"
+        rel="noopener"
         target="_blank"
       >
         repo name
