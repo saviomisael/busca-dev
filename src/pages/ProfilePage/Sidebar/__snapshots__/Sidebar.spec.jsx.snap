@@ -118,6 +118,7 @@ exports[`<Sidebar /> should matches with snapshot 1`] = `
       <a
         class="c6"
         href="blog.com"
+        rel="noopener"
         target="_blank"
       >
         blog.com
