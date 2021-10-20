@@ -27,6 +27,7 @@
     "test": "react-scripts test",
     "test:coverage": "yarn test --watchAll=false --coverage",
     "test:clearCache": "yarn test --clearCache",
+    "test:all": "yarn test --watchAll",
     "eject": "react-scripts eject",
     "lint": "eslint --fix src/**/**.{js,jsx}",
     "storybook": "start-storybook -p 6006 -s public",
