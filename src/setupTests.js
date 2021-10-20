@@ -10,6 +10,7 @@ import { MemoryRouter, Route, Switch } from 'react-router';
 import { theme } from './styles/theme';
 import { Provider } from 'react-redux';
 import { storeMock } from './store/store-mock';
+import { HelmetProvider } from 'react-helmet-async';
 
 global.renderTheme = (children) => render(<ThemeProvider theme={theme}>{children}</ThemeProvider>);
 
@@ -26,11 +27,13 @@ global.withRoutes = (children, options) => {
   return render(
     <Provider store={storeMock}>
       <ThemeProvider theme={theme}>
-        <MemoryRouter initialEntries={initialRoutes}>
-          <Switch>
-            <Route path={options.pathname} render={() => children} />
-          </Switch>
-        </MemoryRouter>
+        <HelmetProvider>
+          <MemoryRouter initialEntries={initialRoutes}>
+            <Switch>
+              <Route path={options.pathname} render={() => children} />
+            </Switch>
+          </MemoryRouter>
+        </HelmetProvider>
       </ThemeProvider>
     </Provider>,
   );
