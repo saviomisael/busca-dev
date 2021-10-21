@@ -18,6 +18,7 @@
 - [React Router DOM](https://reactrouter.com/)
 - [React Helmet Async](https://github.com/staylor/react-helmet-async)
 - [React Hook Form](https://react-hook-form.com/)
+- [Cypress](https://docs.cypress.io/guides/overview/why-cypress)
 
 # Available Scripts
 
@@ -39,6 +40,10 @@ Notes: is necessary a .env.test file.
 ### `yarn test:coverage`
 
 Collect coverage report to the `coverage` folder.
+
+### `yarn cypress:open`
+
+Open Cypress.
 
 # How to run
 
