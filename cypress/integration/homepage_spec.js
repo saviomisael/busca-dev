@@ -15,4 +15,14 @@ describe('home page', () => {
       expect(loc.pathname).contains('notfound');
     });
   });
+
+  it('should redirect to saviomisael profile page when form is submit without username', () => {
+    cy.visit('/');
+
+    cy.get('[data-cy=submit-search-dev]').click();
+
+    cy.location().should((loc) => {
+      expect(loc.pathname).contains('profile/saviomisael');
+    });
+  });
 });
