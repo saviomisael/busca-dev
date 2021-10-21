@@ -1,5 +1,9 @@
 /// <reference types="Cypress" />
 describe('home page', () => {
+  beforeEach(() => {
+    cy.visit('/');
+  });
+
   it('should submit form with a username valid then redirect to profile page', () => {
     cy.submitSearchDevForm('saviomisael');
 
@@ -17,8 +21,6 @@ describe('home page', () => {
   });
 
   it('should redirect to saviomisael profile page when form is submit without username', () => {
-    cy.visit('/');
-
     cy.get('[data-cy=submit-search-dev]').click();
 
     cy.location().should((loc) => {
