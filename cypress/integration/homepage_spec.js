@@ -10,4 +10,15 @@ describe('home page', () => {
       expect(loc.pathname).contains('profile/saviomisael');
     });
   });
+
+  it('should redirect to not found page when user not exist', () => {
+    cy.visit('/');
+
+    cy.get('[data-cy=username-input]').type('chapolinwayne');
+    cy.get('[data-cy=submit-search-dev]').click();
+
+    cy.location().should((loc) => {
+      expect(loc.pathname).contains('notfound');
+    });
+  });
 });
