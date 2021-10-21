@@ -12,8 +12,8 @@ export const SearchDevForm = ({ onSubmit }) => {
 
   return (
     <Styled.Form onSubmit={handleSubmit(onSubmit)}>
-      <Styled.Input placeholder="Digite o username do github" {...register('username')} />
-      <Styled.ButtonSubmit disabled={isSubmitted}>
+      <Styled.Input data-cy="username-input" placeholder="Digite o username do github" {...register('username')} />
+      <Styled.ButtonSubmit data-cy="submit-search-dev" disabled={isSubmitted}>
         <SearchIcon />
       </Styled.ButtonSubmit>
     </Styled.Form>
