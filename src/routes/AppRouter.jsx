@@ -9,6 +9,7 @@ export const AppRouter = () => {
       <Switch>
         <Route path="/" exact component={HomePage} />
         <Route path="/profile/:username" component={ProfilePage} />
+        <Route path="/notfound" component={NotFoundPage} />
         <Route path="*" component={NotFoundPage} />
       </Switch>
     </BrowserRouter>
