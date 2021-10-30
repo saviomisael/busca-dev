@@ -33,7 +33,7 @@ Notes: is necessary a .env.local file.
 
 ### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
+Launches the test runner in the interactive watch mode.
 
 Notes: is necessary a .env.test file.
 
